@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  🎓 Computer Science Graduate | 🚀 Data Engineering Specialist | 🌍 Cairo, Egypt
+  🎓 Computer Science Graduate | 🚀 Aspiring Data Engineer | 🌍 Cairo, Egypt
 </p>
 
 <p align="center">
