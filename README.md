@@ -1,70 +1,94 @@
-<div align="center">
+![Header](./header.svg)
 
-# Marwa Elhussieny
+## About Me
 
-### Data Engineer • Cairo, Egypt
+I'm a data engineer who builds systems that move and transform large amounts of data. Currently working with pipelines processing 5M+ records, optimizing Spark jobs, and designing AWS data infrastructure.
 
-[LinkedIn](https://linkedin.com/in/marwa-elhussieny) • [Email](mailto:marwaelhussieny17@gmail.com) • [GitHub](https://github.com/marwa-elhussieny)
-
-</div>
-
----
-
-## What I Do
-
-I build data infrastructure. That means designing ETL pipelines, optimizing Spark jobs, and making sure data gets from point A to point B without breaking. Currently working on systems that process millions of records daily.
-
-**My stack:**
-- Processing: Apache Spark, Airflow, Kafka
-- Cloud: AWS (S3, Glue, Redshift, Lambda)
-- Languages: Python, SQL
-- Databases: Oracle, PostgreSQL, MySQL
-- Other: Docker, Git, Power BI
-
-## Recent Work
-
-### Enterprise Data Warehouse
-Designed and built a data warehouse using Kimball methodology. Set up Airflow DAGs to orchestrate ETL jobs processing 5M+ records. Implemented incremental loading and data quality validation.
-
-### Spark Pipeline Optimization
-Rebuilt a batch processing pipeline that was taking hours. Rewrote transformations, adjusted partitioning strategy, reduced runtime by 70%. Now handles 2M+ records daily.
-
-### AWS Serverless Architecture
-Built a serverless data pipeline using S3, Glue, and Lambda. Automated data ingestion, transformation, and loading into Redshift. Everything infrastructure-as-code.
-
-### Analytics Dashboards
-Created Power BI dashboards with real-time data refresh. Built custom DAX measures for business metrics. Stakeholders actually use them.
-
-## Learning Right Now
-
-Getting into Kafka for real-time streaming, going deeper on Spark internals, exploring Kubernetes for orchestration. Also looking at how to integrate ML models into data pipelines.
-
-## Background
-
-BSc Computer Science, 3.57/4.0. Started with academic projects, now building production systems. Turns out making things work at scale is way different from making them work once.
-
----
-
-<div align="center">
-
-### Open to data engineering roles and collaborations
-
+**Education:** BSc Computer Science, 3.57/4.0  
 **Location:** Cairo, Egypt (open to remote)
 
-</div>
-
 ```python
-# Quick facts
-skills = {
-    "best_at": "Building reliable ETL pipelines",
-    "currently_obsessed_with": "Kafka streaming",
-    "coffee_consumption": "probably too much",
-    "favorite_data_format": "parquet > everything else"
-}
+class DataEngineer:
+    def __init__(self):
+        self.name = "Marwa Elhussieny"
+        self.focus = [
+            "ETL pipeline architecture",
+            "Distributed data processing", 
+            "Cloud data infrastructure",
+            "Real-time streaming"
+        ]
+        
+    def get_stack(self):
+        return {
+            "processing": ["Apache Spark", "Apache Airflow", "Kafka"],
+            "cloud": ["AWS S3", "Glue", "Redshift", "Lambda"],
+            "languages": ["Python", "SQL"],
+            "databases": ["Oracle", "PostgreSQL", "MySQL"],
+            "tools": ["Docker", "Git", "Power BI"]
+        }
 ```
+
+---
+
+## Recent Projects
+
+<table>
+<tr>
+<td width="50%">
+
+### Enterprise Data Warehouse
+Built using Kimball methodology with star schema design. Airflow orchestrates ETL workflows processing 5M+ records with incremental loading and data quality validation.
+
+**Stack:** Airflow, PostgreSQL, Python
+
+</td>
+<td width="50%">
+
+### Spark Pipeline Optimization  
+Rewrote batch processing pipeline with improved transformations and partitioning. Reduced runtime by 70%, now handles 2M+ daily records.
+
+**Stack:** Apache Spark, Python, Parquet
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### AWS Serverless Architecture
+Serverless data pipeline using S3, Glue, Lambda, and Redshift. Infrastructure-as-code approach for automated data ingestion and transformation.
+
+**Stack:** AWS, Lambda, Redshift, Python
+
+</td>
+<td width="50%">
+
+### Analytics Dashboard Suite
+Power BI dashboards with real-time refresh and custom DAX measures. Provides actionable business metrics used daily by stakeholders.
+
+**Stack:** Power BI, DAX, SQL
+
+</td>
+</tr>
+</table>
+
+---
+
+## Currently Learning
+
+Real-time data streaming with Apache Kafka • Advanced Spark optimization • ML pipeline integration • Kubernetes orchestration
+
+---
+
+## Get in Touch
+
+I'm open to discussing data engineering challenges, ETL best practices, or collaboration opportunities.
 
 <div align="center">
 
-![Profile Views](https://komarev.com/ghpvc/?username=marwa-elhussieny&color=blue&style=flat)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/marwa-elhussieny)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:marwaelhussieny17@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/marwa-elhussieny)
+
+**Available for data engineering roles and internships**
 
 </div>
