@@ -1,346 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marwa Elhussieny - Data Engineer</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<div align="center">
 
-        body {
-            font-family: 'Courier New', monospace;
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
-            color: #eee;
-            padding: 40px 20px;
-            min-height: 100vh;
-        }
+# Marwa Elhussieny
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
+### Data Engineer • Cairo, Egypt
 
-        .header {
-            text-align: center;
-            margin-bottom: 60px;
-            position: relative;
-        }
+[LinkedIn](https://linkedin.com/in/marwa-elhussieny) • [Email](mailto:marwaelhussieny17@gmail.com) • [GitHub](https://github.com/marwa-elhussieny)
 
-        .glitch {
-            font-size: 3.5em;
-            font-weight: bold;
-            text-transform: uppercase;
-            position: relative;
-            color: #fff;
-            letter-spacing: 3px;
-            animation: glitch-text 3s infinite;
-        }
+</div>
 
-        @keyframes glitch-text {
-            0%, 100% { text-shadow: 0 0 10px #00ff88; }
-            25% { text-shadow: -2px 0 #ff0088, 2px 0 #00ff88; }
-            50% { text-shadow: 2px 0 #ff0088, -2px 0 #00ff88; }
-            75% { text-shadow: -2px 0 #00ff88, 2px 0 #ff0088; }
-        }
+---
 
-        .tagline {
-            font-size: 1.2em;
-            color: #00ff88;
-            margin-top: 10px;
-            opacity: 0;
-            animation: fadeIn 1s ease-in forwards 0.5s;
-        }
+## What I Do
 
-        @keyframes fadeIn {
-            to { opacity: 1; }
-        }
+I build data infrastructure. That means designing ETL pipelines, optimizing Spark jobs, and making sure data gets from point A to point B without breaking. Currently working on systems that process millions of records daily.
 
-        .terminal {
-            background: #000;
-            border: 2px solid #00ff88;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 30px 0;
-            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
-            position: relative;
-            overflow: hidden;
-        }
+**My stack:**
+- Processing: Apache Spark, Airflow, Kafka
+- Cloud: AWS (S3, Glue, Redshift, Lambda)
+- Languages: Python, SQL
+- Databases: Oracle, PostgreSQL, MySQL
+- Other: Docker, Git, Power BI
 
-        .terminal::before {
-            content: '● ● ●';
-            position: absolute;
-            top: 10px;
-            left: 15px;
-            color: #00ff88;
-            font-size: 0.8em;
-        }
+## Recent Work
 
-        .terminal-content {
-            margin-top: 30px;
-            font-size: 0.95em;
-            line-height: 1.8;
-        }
+### Enterprise Data Warehouse
+Designed and built a data warehouse using Kimball methodology. Set up Airflow DAGs to orchestrate ETL jobs processing 5M+ records. Implemented incremental loading and data quality validation.
 
-        .prompt {
-            color: #00ff88;
-        }
+### Spark Pipeline Optimization
+Rebuilt a batch processing pipeline that was taking hours. Rewrote transformations, adjusted partitioning strategy, reduced runtime by 70%. Now handles 2M+ records daily.
 
-        .command {
-            color: #ff0088;
-        }
+### AWS Serverless Architecture
+Built a serverless data pipeline using S3, Glue, and Lambda. Automated data ingestion, transformation, and loading into Redshift. Everything infrastructure-as-code.
 
-        .output {
-            color: #fff;
-            margin-left: 20px;
-        }
+### Analytics Dashboards
+Created Power BI dashboards with real-time data refresh. Built custom DAX measures for business metrics. Stakeholders actually use them.
 
-        .section {
-            margin: 40px 0;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.05);
-            border-left: 4px solid #00ff88;
-            border-radius: 4px;
-            backdrop-filter: blur(10px);
-            transform: translateX(-20px);
-            opacity: 0;
-            animation: slideIn 0.6s ease-out forwards;
-        }
+## Learning Right Now
 
-        .section:nth-child(odd) {
-            border-left-color: #ff0088;
-            animation-delay: 0.2s;
-        }
+Getting into Kafka for real-time streaming, going deeper on Spark internals, exploring Kubernetes for orchestration. Also looking at how to integrate ML models into data pipelines.
 
-        .section:nth-child(even) {
-            animation-delay: 0.4s;
-        }
+## Background
 
-        @keyframes slideIn {
-            to {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
+BSc Computer Science, 3.57/4.0. Started with academic projects, now building production systems. Turns out making things work at scale is way different from making them work once.
 
-        h2 {
-            color: #00ff88;
-            margin-bottom: 20px;
-            font-size: 1.8em;
-            display: inline-block;
-            border-bottom: 2px solid #00ff88;
-            padding-bottom: 5px;
-        }
+---
 
-        .project-grid {
-            display: grid;
-            gap: 20px;
-            margin-top: 20px;
-        }
+<div align="center">
 
-        .project-card {
-            background: rgba(0, 0, 0, 0.4);
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid transparent;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
+### Open to data engineering roles and collaborations
 
-        .project-card:hover {
-            border-color: #00ff88;
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0, 255, 136, 0.2);
-        }
+**Location:** Cairo, Egypt (open to remote)
 
-        .project-title {
-            color: #ff0088;
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
+</div>
 
-        .tech-tag {
-            display: inline-block;
-            background: rgba(0, 255, 136, 0.1);
-            color: #00ff88;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85em;
-            margin: 5px 5px 5px 0;
-            border: 1px solid #00ff88;
-        }
+```python
+# Quick facts
+skills = {
+    "best_at": "Building reliable ETL pipelines",
+    "currently_obsessed_with": "Kafka streaming",
+    "coffee_consumption": "probably too much",
+    "favorite_data_format": "parquet > everything else"
+}
+```
 
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 20px;
-        }
+<div align="center">
 
-        .skill-pill {
-            background: linear-gradient(135deg, #ff0088 0%, #00ff88 100%);
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: transform 0.3s ease;
-            cursor: default;
-        }
+![Profile Views](https://komarev.com/ghpvc/?username=marwa-elhussieny&color=blue&style=flat)
 
-        .skill-pill:hover {
-            transform: scale(1.1) rotate(2deg);
-        }
-
-        .contact-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 40px;
-            flex-wrap: wrap;
-        }
-
-        .contact-link {
-            color: #00ff88;
-            text-decoration: none;
-            padding: 12px 30px;
-            border: 2px solid #00ff88;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-            font-weight: bold;
-        }
-
-        .contact-link:hover {
-            background: #00ff88;
-            color: #000;
-            transform: scale(1.05);
-        }
-
-        .cursor {
-            display: inline-block;
-            width: 10px;
-            height: 20px;
-            background: #00ff88;
-            animation: blink 0.8s infinite;
-        }
-
-        @keyframes blink {
-            0%, 50% { opacity: 1; }
-            51%, 100% { opacity: 0; }
-        }
-
-        @media (max-width: 768px) {
-            .glitch { font-size: 2em; }
-            .section { padding: 20px; }
-            .contact-links { flex-direction: column; }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1 class="glitch">Marwa Elhussieny</h1>
-            <p class="tagline">Data Engineer • Pipeline Builder • Cairo, Egypt</p>
-        </div>
-
-        <div class="terminal">
-            <div class="terminal-content">
-                <div><span class="prompt">marwa@data-eng:~$</span> <span class="command">whoami</span></div>
-                <div class="output">Computer Science grad building production data systems</div>
-                <div class="output">BSc CS • 3.57/4.0 • Processing 5M+ records daily</div>
-                <br>
-                <div><span class="prompt">marwa@data-eng:~$</span> <span class="command">cat current_focus.txt</span></div>
-                <div class="output">→ ETL pipeline architecture</div>
-                <div class="output">→ Spark optimization & distributed computing</div>
-                <div class="output">→ AWS serverless data solutions</div>
-                <div class="output">→ Real-time streaming with Kafka</div>
-                <br>
-                <div><span class="prompt">marwa@data-eng:~$</span> <span class="cursor"></span></div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Tech Stack</h2>
-            <div class="skills-container">
-                <div class="skill-pill">Python</div>
-                <div class="skill-pill">SQL</div>
-                <div class="skill-pill">Apache Spark</div>
-                <div class="skill-pill">Apache Airflow</div>
-                <div class="skill-pill">Kafka</div>
-                <div class="skill-pill">AWS</div>
-                <div class="skill-pill">Docker</div>
-                <div class="skill-pill">PostgreSQL</div>
-                <div class="skill-pill">Oracle</div>
-                <div class="skill-pill">Power BI</div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Recent Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-title">Enterprise Data Warehouse</div>
-                    <p>Kimball methodology implementation with star schema. Airflow orchestration processing 5M+ records. Incremental loading with data quality checks.</p>
-                    <div style="margin-top: 10px;">
-                        <span class="tech-tag">Airflow</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">ETL</span>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-title">Big Data Pipeline Optimization</div>
-                    <p>Rewrote Spark transformations, optimized partitioning strategy. Achieved 70% performance improvement. Handles 2M+ daily records.</p>
-                    <div style="margin-top: 10px;">
-                        <span class="tech-tag">Apache Spark</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Optimization</span>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-title">AWS Serverless Architecture</div>
-                    <p>Built serverless data pipeline with S3, Glue, Lambda, and Redshift. Infrastructure-as-code approach for reproducible deployments.</p>
-                    <div style="margin-top: 10px;">
-                        <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">Lambda</span>
-                        <span class="tech-tag">Redshift</span>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-title">Analytics Dashboard Suite</div>
-                    <p>Power BI dashboards with advanced DAX calculations. Real-time data refresh and actionable business metrics.</p>
-                    <div style="margin-top: 10px;">
-                        <span class="tech-tag">Power BI</span>
-                        <span class="tech-tag">DAX</span>
-                        <span class="tech-tag">Analytics</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Currently Exploring</h2>
-            <p style="line-height: 1.8;">
-                Real-time data streaming with Apache Kafka • Advanced Spark optimization techniques • 
-                ML pipeline integration • Kubernetes for data engineering workloads • 
-                Stream processing architectures
-            </p>
-        </div>
-
-        <div class="contact-links">
-            <a href="https://linkedin.com/in/marwa-elhussieny" class="contact-link">LinkedIn</a>
-            <a href="mailto:marwaelhussieny17@gmail.com" class="contact-link">Email</a>
-            <a href="https://github.com/marwa-elhussieny" class="contact-link">GitHub</a>
-        </div>
-
-        <div style="text-align: center; margin-top: 60px; color: #666; font-size: 0.9em;">
-            <p>Open to data engineering roles and collaborations</p>
-            <p style="margin-top: 10px;">Cairo, Egypt • Remote-friendly</p>
-        </div>
-    </div>
-</body>
-</html>
+</div>
