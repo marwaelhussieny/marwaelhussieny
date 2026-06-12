@@ -1,23 +1,26 @@
 ![Header](./header.svg)
 
 ## About Me
+Data engineer. I move data from one place to another and transform it 
+along the way — occasionally on purpose, occasionally because Airflow 
+gave me no other choice.
 
-I'm a data engineer who builds systems that move and transform large amounts of data. Currently working with pipelines processing 5M+ records, optimizing Spark jobs, and designing AWS data infrastructure.
+Fresh ITI Data Engineering grad. I like systems that are clean enough to 
+explain in an interview and resilient enough to survive me touching them.
 
-**Education:** BSc Computer Science, 3.57/4.0  
-**Location:** Cairo, Egypt (open to remote)
-
+**Location:** Cairo, Egypt (open to remote — my pipelines don't care where I sit)
 ```python
 class DataEngineer:
     def __init__(self):
         self.name = "Marwa Elhussieny"
         self.focus = [
             "ETL pipeline architecture",
-            "Distributed data processing", 
+            "Distributed data processing",
             "Cloud data infrastructure",
-            "Real-time streaming"
+            "Real-time streaming",
+            "Googling the same Stack Overflow answer for the third time"
         ]
-        
+
     def get_stack(self):
         return {
             "processing": ["Apache Spark", "Apache Airflow", "Kafka"],
@@ -26,46 +29,57 @@ class DataEngineer:
             "databases": ["Oracle", "PostgreSQL", "MySQL"],
             "tools": ["Docker", "Git", "Power BI"]
         }
+
+    def debug(self):
+        return "It's probably a null somewhere."
 ```
 
 ---
 
 ## Recent Projects
+Things I built that work. Mostly.
 
 <table>
 <tr>
 <td width="50%">
 
-### Enterprise Data Warehouse
-Built using Kimball methodology with star schema design. Airflow orchestrates ETL workflows processing 5M+ records with incremental loading and data quality validation.
+### Real-Time Streaming Pipeline
+End-to-end Kafka pipeline for real-time data ingestion and processing. 
+Continuous data flow, producers/consumers, and a sink that's there to 
+catch whatever Kafka throws at it.
 
-**Stack:** Airflow, PostgreSQL, Python
+**Stack:** Apache Kafka, Python, [add Spark Streaming/sink here]
 
 </td>
 <td width="50%">
 
-### Spark Pipeline Optimization  
-Rewrote batch processing pipeline with improved transformations and partitioning. Reduced runtime by 70%, now handles 2M+ daily records.
+### Enterprise Data Warehouse
+Kimball methodology, star schema, the works. Airflow orchestrates ETL 
+across 5M+ records with incremental loading and data quality checks — 
+because trust issues are a feature, not a bug.
 
-**Stack:** Apache Spark, Python, Parquet
+**Stack:** Airflow, PostgreSQL, Python
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### AWS Serverless Architecture
-Serverless data pipeline using S3, Glue, Lambda, and Redshift. Infrastructure-as-code approach for automated data ingestion and transformation.
+### Spark Pipeline Optimization
+Rewrote a batch pipeline's transformations and partitioning. Cut runtime 
+by 70%. The other 30% is apparently non-negotiable.
 
-**Stack:** AWS, Lambda, Redshift, Python
+**Stack:** Apache Spark, Python, Parquet
 
 </td>
 <td width="50%">
 
-### Analytics Dashboard Suite
-Power BI dashboards with real-time refresh and custom DAX measures. Provides actionable business metrics used daily by stakeholders.
+### AWS Serverless Architecture
+Serverless pipeline using S3, Glue, Lambda, and Redshift, with 
+infrastructure-as-code so I don't have to click around the AWS console 
+like it's 2012.
 
-**Stack:** Power BI, DAX, SQL
+**Stack:** AWS, Lambda, Redshift, Python
 
 </td>
 </tr>
@@ -74,14 +88,16 @@ Power BI dashboards with real-time refresh and custom DAX measures. Provides act
 ---
 
 ## Currently Learning
-
-Real-time data streaming with Apache Kafka • Advanced Spark optimization • ML pipeline integration • Kubernetes orchestration
+Advanced Spark optimization • ML pipeline integration • Kubernetes 
+orchestration • stream processing at scale • how to read error logs 
+without sighing audibly
 
 ---
 
 ## Get in Touch
-
-I'm open to discussing data engineering challenges, ETL best practices, or collaboration opportunities.
+Open to discussing data engineering challenges, ETL best practices, or 
+collaboration opportunities. Response time inversely proportional to how 
+recently a pipeline broke.
 
 <div align="center">
 
